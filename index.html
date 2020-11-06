@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>covid app</title>
+
+    <link rel="stylesheet" href="./css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="./css/vendor/font.css">
+    <link rel="stylesheet" href="./css/vendor/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/bootstrapjquery.js"></script>
+
+</head>
+
+<body>
+
+    <div class="loader " id="loading">
+        <div class="spinner-grow text-primary" role="status">
+
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+
+        </div>
+        <div class="spinner-grow text-success" role="status">
+
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+
+        </div>
+        <div class="spinner-grow text-info" role="status">
+
+        </div>
+        <div class="spinner-grow text-light" role="status">
+
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+
+        </div>
+    </div>
+
+
+
+    <div id="error">
+        <h5>Ooops, Something happened, pls try again again later </h5>    <br>
+        <button id="refresh_btn">Try again</button>
+
+    </div>
+    <div class="containerInfo container" id="containerInfo">
+        <div class="overview  p-4">
+            <div class="container row info-row-one">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single">
+                        <h5>Total Sample Tested</h5>
+                        <p id="total_sample_tested"> </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single">
+                        <h5>Total Confirmed Cases</h5>
+                        <p id="total_confirmed_cases"></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single">
+                        <h5>Total Active Cases</h5>
+                        <p id="total_active_cases"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container row row info-row-one pt-3 mt-4 row-two">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single">
+                        <h5>Discharged</h5>
+                        <p id="discharged"></p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single">
+                        <h5>Death</h5>
+                        <p id="death"></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="single">
+                        <h5>Total States And FCT</h5>
+                        <p id="totalStates"></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- <input class="state" type="text" placeholder="State" required> -->
+        <!-- <button class="btn">Search</button> -->
+
+
+        <div class="state-info container mt-5">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">State</th>
+                        <th scope="col">Confirmed Cases</th>
+                        <th scope="col">Cases on Admission</th>
+                        <th scope="col">Discharged</th>
+                        <th scope="col">Death</th>
+                    </tr>
+                </thead>
+                <tbody id="state-covid">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/vendor/proper.js"></script>
+    <script src="./js/vendor/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
